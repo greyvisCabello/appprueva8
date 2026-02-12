@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bloque.css">
+    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="desplegabl.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+      <!-- El checkbox controla el estado del menú -->
+    <input type="checkbox" id="btn-nav" class="checkbox-menu">
+
+    <!-- Botón para abrir (hamburguesa) -->
+    <header class="header">
+        <label for="btn-nav" class="btn-open">☰</label>
+    </header>
+
+    <!-- Menú lateral -->
+  <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Navegación</h3>
+            <label for="btn-nav" class="btn-close">✕</label>
+        </div>
+   <!-- Dentro del <nav class="sidebar"> -->
+<ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+      <li><a href="cronograma.html">Cronograma</a></li>
+    
+    <!-- Item con Submenú -->
+    <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-1" class="sub-checkbox">
+        <label for="sub-btn-1" class="sub-label">
+            Destinos turisticos  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="playas.html">Playas </a></li>
+            <li><a href="rios.html">Rios y lagunas</a></li>
+            <li><a href="plazas.html">Plazas </a></li>
+            <li><a href="parques..html">Parques </a></li>
+        </ul>
+    </li>
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-4" class="sub-checkbox">
+        <label for="sub-btn-4" class="sub-label">
+         Otros sitios de interes  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+      
+           
+            <li><a href="otros_s.html">Sitios historicos </a></li>
+            <li><a href="monumentos_r.html">Monumentos religiosos  </a></li>
+           
+        </ul>
+    </li>
+
+     <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-2" class="sub-checkbox">
+        <label for="sub-btn-2" class="sub-label">
+           Alojamiento  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="hoteles.html">Hoteles </a></li>
+            <li><a href="posadas.html">Posadas</a></li>
+          
+        </ul>
+    </li>
+
+    <li><a href="comidas_vrvidas.html">Alimentos y vevidas</a></li>
+ 
+
+      <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-22" class="sub-checkbox">
+        <label for="sub-btn-22" class="sub-label">
+           Salud <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="salud.html">Centros de salud  </a></li>
+            <li><a href="farmacia.html">Farmacias </a></li>
+         
+        </ul>
+    </li>
+
+
+
+
+     <li><a href="segutidad.html">Seguridad</a></li>
+
+
+       <li class="item-has-submenu">
+        <input type="checkbox" id="sub-btn-3" class="sub-checkbox">
+        <label for="sub-btn-3" class="sub-label">
+           Transporte  <span class="arrow">▼</span>
+        </label>
+        
+        <ul class="submenu">
+            <li><a href="urbano.html">Ubano </a></li>
+            <li><a href="sudurbano.html">Sud ubano</a></li>
+            <li><a href="privado.html">Privado</a></li>
+        </ul>
+    </li>   
+      <li><a href="estacion_s.html">Estaciones de servicio    </a></li>
+</ul>
+    </nav>
+
+    
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="https://images.unsplash.com" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Nombre del Lugar</h3>
+            <p class="tarjeta-direccion">Calle Ejemplo 123, Ciudad, País</p>
+            
+            <a href="#" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+<div class="pantalla-completa">
+    <article class="tarjeta-ubicacion">
+        <img src="https://images.unsplash.com" alt="Lugar" class="tarjeta-img">
+        
+        <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-nombre">Nombre del Lugar</h3>
+            <p class="tarjeta-direccion">Calle Ejemplo 123, Ciudad, País</p>
+            
+            <a href="#" class="boton-visitar">
+                <svg class="icono-gps" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Visitar
+            </a>
+        </div>
+    </article>
+</div>
+
+<footer class="footer-institucional">
+  <div class="fila-logos">
+    <img src="l1.png" alt="Logo 1">
+    <img src="l2.png" alt="Logo 2">
+    <img src="l3.png" alt="Logo 3">
+    <img src="l4.png" alt="Logo 4">
+    <img src="l5.png" alt="Logo 5">
+    <img src="l6.png" alt="Logo 6">
+    <img src="l7.png" alt="Logo 7">
+    <img src="l8.png" alt="Logo 8">
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
